@@ -89,6 +89,26 @@ export async function deleteTodo(userId: string, todoId: string) {
     return await todosAccess.deleteTodo(todoId, userId);
     }
 
+    //Delete all todos
+    export async function deleteAllTodos(userId: string) { //  todoId: string
+
+      const Items = await getTodos(userId)
+      //make loop
+      for (const item of Items){ 
+        logger.info(`Deleting all todo.id: ${item.todoId} from userId: ${userId}`)
+        deleteTodo(userId, item.todoId)
+      }
+      // if (Item.userId !== userId) {
+      //   logger.error(`Deletion denied, not your todo`)
+      //   throw new Error('Deletion denied, not your todo') 
+      //   delete userId.todoId[1].items[1] 
+      //   } 
+
+          
+      // return await deleteTodo(userId, todoId);
+      }
+
+
 export const getUploadUrl = (attachmentId: string) => attachmentUtils.getUploadUrl(attachmentId);
 
 export const getAttachmentUrl = (attachmentId: string) => attachmentUtils.getAttachmentUrl(attachmentId)

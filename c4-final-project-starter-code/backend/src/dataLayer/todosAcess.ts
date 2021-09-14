@@ -107,6 +107,22 @@ export class TodosAccess {
       
       return Promise.resolve()
     }
+  // //Creating delete all todos
+  //   async deleteAllTodos(userId: string, todoId: string): Promise<void> {
+
+  //     logger.info(`Delete All todo request processing for  ${this.todosTable}`)
+  
+  //     await this.docClient.delete({
+  //       TableName: this.todosTable,
+  //       Key: {
+  //         todoId: todoId,
+  //         userId: userId
+  //       }
+  //     }).promise();
+  //     logger.info(`after deletion ${this.todosTable}`)
+  //     return Promise.resolve()
+  //   }
+
 
     async updateUrl(todoId: string, attachmentUrl: string, userId: string) {
 

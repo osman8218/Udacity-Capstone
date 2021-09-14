@@ -1,3 +1,58 @@
+# Capstone: Adding a delete all todos backend function.
+
+- I've created a function that deletes all tasks in the users profile that can be called from the backend using postman. 
+
+You can add taks and it will delete all of them when you are ready you just the call the postman collection.
+
+-Added postman_collections in the project directory.
+        - Token: In submission notes
+
+This is a very useful tool if you have more than 1 item you want to delete instead of selecting them 1 by 1.
+
+:)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
